@@ -9,9 +9,9 @@ class UsersController < ApplicationController
     puts "<====>"
     puts params
     puts "<====>"
-    @user.username = params[:username]
-    @user.email = params[:email]
-    @user.bio = params[:bio]
+    @user.username = params["user"][:username]
+    @user.email = params["user"][:email]
+    @user.bio = params["user"][:bio]
     @user.save
     # User.create(username:a, email:b, bio:c)
     redirect_to "/"
