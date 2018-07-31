@@ -1,0 +1,40 @@
+
+
+<h1>Users#new</h1>
+<p>Find me in app/views/users/new.html.erb</p>
+<!--
+<form action="<%= create_path %>"method="POST">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+<input type="text" name="user" placeholder="username">
+<input type="email" name="email" placeholder="email">
+<textarea name="bio" rows="8" cols="30" placeholder="bio"></textarea>
+  <input type="submit" value="Envoyer le formulaire">
+</form> -->
+
+
+<!-- <%= form_tag url_for(action: 'create'), method: "post" do %>
+
+  <%= label_tag 'User' %>
+  <%= text_field_tag 'user'  %>
+  <br /> <br />
+
+  <%= label_tag 'Email' %>
+  <%= text_field_tag 'email' %>
+  <br /> <br />
+
+  <%= label_tag 'Bio' %>
+  <%= text_area_tag 'bio'%>
+  <br /> <br />
+
+  <%= submit_tag "Create Post" %>
+
+<% end %> -->
+
+
+
+<%= form_for :user do |f| %>
+  Username: <%= f.text_field :username %><br />
+  Email : <%= f.text_field :email %><br />
+  Bio : <%= f.text_area :bio %><br />
+  <%= f.submit %>
+<% end %>
