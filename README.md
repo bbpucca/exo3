@@ -1,5 +1,5 @@
 
-<h1>L'appli Formulaire /h1>
+<h1>L'appli Formulaire </h1>
 
 </ul>
 <h2 id="a-toi-de-jouer">A toi de jouer</h2>
